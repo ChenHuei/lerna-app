@@ -9,13 +9,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Button
-          textColor="black"
+          primary
+          label={formatByPackage("Hello")}
           onClick={() => {
             console.log("click");
           }}
-        >
-          {formatByPackage("Hello")}
-        </Button>
+        />
       </header>
     </div>
   );
